@@ -5,7 +5,7 @@ on:
 
 jobs:
   push:
-    name: "nginx-ptero:8.1"
+    name: "nginx-ptero-traefik:8.1"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -28,4 +28,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/sigma-production/nginx-ptero:8.1
+            ghcr.io/davwado/nginx-ptero-traefik:8.1
